@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,35 +21,39 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a class="logo-web" href="./index.html"
-          >Web<span class="logo-studio">Studio</span></a
-        >
-        <ul class="header-nav">
-          <li class="heder-nav-item">
-            <a class="header-nav" href="./index.html">Studio</a>
-          </li>
-          <li class="heder-nav-item">
-            <a class="header-nav" href="">Portfolio</a>
-          </li>
-          <li class="heder-nav-item">
-            <a class="header-nav" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="address-menu">
-        <ul class="menu-contact">
-          <li>
-            <a class="contacts" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contacts" href="tel:+110001111111">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
-      </address>
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="header-nav-title">
+          <a class="logo-web" href="./index.html"
+            >Web<span class="logo-studio">Studio</span></a
+          >
+          <ul class="header-nav">
+            <li class="heder-nav-item">
+              <a class="header-nav-link" href="./index.html">Studio</a>
+            </li>
+            <li class="heder-nav-item">
+              <a class="header-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="heder-nav-item">
+              <a class="header-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address-menu">
+          <ul class="menu-contact">
+            <li class="contacts-list">
+              <a class="contacts" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li class="contacts-list">
+            <li>
+              <a class="contacts" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <main>

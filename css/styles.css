@@ -1,156 +1,213 @@
 body {
-    color: #434455;
-    background-color: #FFFFFF;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #404bbf;
-
+  color: #404bbf;
+}
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/* -----------header------------- */
 /* Лого */
 .logo-web,
 .logo-studio {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
 }
 
 .logo-web {
-    color: #4d5ae5;
+  color: #4d5ae5;
+  padding: 24px 0;
+  margin-right: 76px;
 }
 
 .logo-studio {
-    color: #2e2f42;
+  color: #2e2f42;
 }
 
 /* Навігація */
+.header-nav-link {
+  display: block;
+  padding: 24px 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: #434455;
+  align-items: center;
+  gap: 40px;
+}
+
 .header-nav {
-    justify-content: space-between;
-    font-weight: 500;
-    font-size: 16px;
-    color: #434455
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-title {
+  display: flex;
+  align-items: center;
+}
+
+.menu-contact {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.address-menu {
+  font-style: normal;
+  margin-left: auto;
 }
 
 /* Основний заголовок */
 .main-section-title {
-    background: #2e2f42;
+  background: #2e2f42;
 }
 
 .heading-effective {
-    font-weight: 700;
-    font-size: 56px;
-    letter-spacing: 0.02em;
-    color: #fff;
-    text-align: center;
-    line-height: 1.07;
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-align: center;
+  line-height: 1.07;
 }
 
 /* Контактна інформація */
 .mail-info,
 .tel-info {
-    font-size: 16px;
-    color: #434455;
+  font-size: 16px;
+  color: #434455;
 }
 
 /* Кнопки */
 .button-effective {
-    background: #4d5ae5;
-    color: #fff;
-    border: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
+  background: #4d5ae5;
+  color: #fff;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
 
 .button-effective:hover,
 .button-effective:focus {
-    background-color: #404BBF;
+  background-color: #404bbf;
 }
 
 /* Заголовки */
 .team-member-title,
 .header-text,
 .heading-second {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
 }
 
 .photo-member {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .section-member {
-    background: #f4f4fd;
+  background: #f4f4fd;
 }
 
 .header-member,
 .header-portfolio {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
 
 /* Футер */
 .footer-menu {
-    background: #2E2F42;
+  background: #2e2f42;
 }
 
 .logo-web-footer {
-    color: #4D5AE5;
-    line-height: 1.17;
+  color: #4d5ae5;
+  line-height: 1.17;
 }
 
 .logo-studio-footer,
 .footer-menu p {
-    color: #F4F4FD;
+  color: #f4f4fd;
 }
 
 /* ------------------------------- */
 .address-menu {
-    font-style: normal;
+  font-style: normal;
 }
 
 .contacts {
-    color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  display: block;
+  padding: 24px 0;
 }
 
 .header-nav {
-    color: #2e2f42;
+  color: #2e2f42;
 }
 
 /* -----------section info--------- */
 .sub-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
