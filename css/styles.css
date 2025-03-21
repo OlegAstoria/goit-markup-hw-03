@@ -25,6 +25,10 @@ body {
   overflow: hidden;
 }
 
+img {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
@@ -131,6 +135,10 @@ p {
   gap: 24px;
   row-gap: 48px;
   width: 100%;
+}
+
+.sub-title {
+  margin-bottom: 8px;
 }
 
 .main-section-portfolio {
@@ -295,4 +303,9 @@ p {
 
 .header-text {
   margin-bottom: 8px;
+}
+
+.team-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
