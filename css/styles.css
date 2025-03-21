@@ -7,6 +7,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -104,6 +118,24 @@ p {
 /* Основний заголовок */
 .main-section-title {
   background: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.main-section-member {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  width: 100%;
+}
+
+.photo-member {
+  width: calc((100% - 72px) / 3);
+}
+
+.main-section-info {
+  padding-top: 133px;
+  padding-bottom: 153px;
 }
 
 .heading-effective {
@@ -111,8 +143,9 @@ p {
   font-size: 56px;
   letter-spacing: 0.02em;
   color: #fff;
-  text-align: center;
   line-height: 1.07;
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 /* Контактна інформація */
@@ -133,6 +166,13 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  display: block;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
+  height: 56px;
+  margin-top: 48px;
 }
 
 .button-effective:hover,
@@ -154,10 +194,18 @@ p {
 
 .photo-member {
   background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .section-member {
   background: #f4f4fd;
+}
+
+.team-container {
 }
 
 .header-member,
@@ -210,4 +258,28 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.section-info-list {
+  display: flex;
+  gap: 30px;
+  padding-right: 36px;
+  padding-left: 36px;
+}
+
+.section-info-item {
+  flex-basis: calc((100% - 72px) / 3);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  width: 100%;
+}
+
+.text-portfolio {
+  flex-basis: calc((100% - 72px) / 4);
 }
