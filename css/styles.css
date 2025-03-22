@@ -147,7 +147,7 @@ p {
 }
 
 .photo-member {
-  width: calc((100% - 72px) / 3);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   display: flex;
@@ -221,10 +221,6 @@ p {
   margin-bottom: 8px;
 }
 
-.team-member-text {
-  text-align: center;
-}
-
 .section-member {
   background: #f4f4fd;
   padding-top: 120px;
@@ -280,14 +276,13 @@ p {
 }
 
 .section-info-item {
-  width: calc((100% - 72px) / 3);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 24px;
   width: 100%;
 }
 
@@ -299,10 +294,12 @@ p {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  text-align: left;
 }
 
 .header-text {
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .team-container {
